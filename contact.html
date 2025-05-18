@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your awesome static website">
+    <title>Contact Us | Your Site Name</title>
+
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+
+
+<body>
+    <!-- Same header as index.html -->
+    <!-- Navigation -->
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+            <a class="pure-menu-heading" href="/">Your Brand</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="/about.html" class="pure-menu-link">About</a></li>
+                <li class="pure-menu-item"><a href="/blog/" class="pure-menu-link">Blog</a></li>
+                <li class="pure-menu-item"><a href="/contact.html" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="">
+        <div class="content">
+            <h1 class="content-head is-center">Contact Us</h1>
+
+            <div class="pure-g">
+                <div class="l-box pure-u-1 pure-u-md-1-2">
+                    <form class="pure-form pure-form-stacked">
+                        <fieldset>
+                            <legend>Send us a message</legend>
+
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Your Name" required>
+
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Your Email" required>
+
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option>General Inquiry</option>
+                                <option>Support</option>
+                                <option>Feedback</option>
+                            </select>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+
+                            <button type="submit" class="pure-button pure-button-primary">Send Message</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2">
+                    <h2>Contact Information</h2>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> +1 (123) 456-7890
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i> info@yoursite.com
+                    </p>
+
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9am to 5pm</p>
+                    <p>Saturday: 10am to 2pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Same footer as index.html -->
+    </div>
+
+    <!-- Same scripts as index.html -->
+    <script>
+        // Additional contact form handling
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Simple form validation
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+
+                    if (name && email && message) {
+                        // In a real app, you would send this to a server
+                        alert('Thank you for your message! We will get back to you soon.');
+                        contactForm.reset();
+                    } else {
+                        alert('Please fill in all required fields.');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

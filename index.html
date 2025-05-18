@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your awesome static website">
+    <title>Your Site Name</title>
+
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+            <a class="pure-menu-heading" href="/">Your Brand</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="/about.html" class="pure-menu-link">About</a></li>
+                <li class="pure-menu-item"><a href="/blog/" class="pure-menu-link">Blog</a></li>
+                <li class="pure-menu-item"><a href="/contact.html" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="splash-container">
+        <div class="splash">
+            <h1 class="splash-head">Welcome to Our Site</h1>
+            <p class="splash-subhead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p>
+                <a href="/about.html" class="pure-button pure-button-primary">Learn More</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <div class="content">
+            <h2 class="content-head is-center">Our Services</h2>
+
+            <div class="pure-g">
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fas fa-rocket"></i>
+                        Fast Performance
+                    </h3>
+                    <p>
+                        Our static sites load blazingly fast for better user experience.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fas fa-mobile-alt"></i>
+                        Responsive Design
+                    </h3>
+                    <p>
+                        Looks great on any device, from phones to desktops.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fas fa-th-large"></i>
+                        Modular Components
+                    </h3>
+                    <p>
+                        Easy to customize and extend with PureCSS components.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fas fa-check-circle"></i>
+                        Simple Setup
+                    </h3>
+                    <p>
+                        Just HTML, CSS, and JavaScript - no complex build tools needed.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="ribbon l-box-lrg pure-g">
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+                <h2 class="content-head content-head-ribbon">Ready to get started?</h2>
+                <p>
+                    Contact us today to learn more about our services and how we can help you build an amazing static
+                    website.
+                </p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                <button id="cta-button" class="pure-button pure-button-primary">Contact Us</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer l-box is-center">
+            <p>
+                &copy; 2023 Your Company. All rights reserved.
+                <br>
+                Built with <a href="https://purecss.io/" target="_blank">PureCSS</a> and vanilla JavaScript.
+            </p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/utils.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
